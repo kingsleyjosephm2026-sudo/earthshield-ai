@@ -1,0 +1,12 @@
+services:
+  api:
+    build: ./backend
+    ports: ["8000:8000"]
+    environment: { DATA_DIR: /app/data }
+  web:
+    image: node:22
+    working_dir: /web
+    volumes: ["./frontend:/web"]
+    command: sh -c "npm install && npm run dev -- --host"
+    environment: { VITE_API: http://localhost:8000 }
+    ports: ["5173:5173"]

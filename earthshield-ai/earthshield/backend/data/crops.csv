@@ -1,0 +1,5 @@
+crop,yield_t_per_ha,price_inr_per_t,note
+rice,3.5,22000,ASSUMPTION - not market data
+cotton,2.0,65000,ASSUMPTION - not market data
+maize,5.0,20000,ASSUMPTION - not market data
+chilli,2.5,150000,ASSUMPTION - not market data
